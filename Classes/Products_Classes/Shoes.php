@@ -1,8 +1,7 @@
 <?php
 require_once __DIR__ . '/../Products.php';
 
-class Shoes  extends Products
-{
+class Shoes  extends Products {
     private $sizeShoes;
     private $type;
 

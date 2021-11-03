@@ -7,7 +7,7 @@ class Products {
      * __construct
      * 
      * @param string $_brand
-     * @param int $_price
+     * @param float $_price
      */
     function __construct($_brand, $_price)
     {
