@@ -7,6 +7,7 @@ require_once __DIR__ . '/Classes/Products_Classes/Shoes.php';
 require_once __DIR__ . '/Classes/Users.php';
 require_once __DIR__ . '/Classes/Users_Classes/Premium.php';
 require_once __DIR__ . '/Classes/Users_Classes/Employee.php';
+require_once __DIR__ . '/Classes/CreditCard.php';
 
 $pulloverNike = new Top('L', 'Pullover', 'Nike', 39.99);
 
@@ -16,7 +17,9 @@ $airForceNike = new Shoes(44.5, 'Air Force 1', 'Nike', 100);
 
 $user1 = new Users('Marco', 'Rossi', 'marco@gmail.com', '20-07-1999');
 
-$userPremium2 = new PremiumUsers('Mario', 'Verdi', 'mario@gmail.com', '08-03-1994', 2);
+$userPremium2 = new PremiumUsers('Mario', 'Verdi', 'mario@gmail.com', '08-03-1994', 3);
+$userPremium2CreditCard = new CreditCard('5555555555554444', '10/21', '10/24', 317);
+$userPremium2->setCreditCard($userPremium2CreditCard);
 $userPremium2->setSconto($userPremium2->getLivello());
 
 $employee = new Employee('Alessia', 'Bianchi', 'alessia@gmail.com', '23-10-1990');

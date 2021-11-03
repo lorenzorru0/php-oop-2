@@ -9,9 +9,9 @@ class Employee extends Users
      * 
      * @param int $_livello
      */
-    function __construct($_name, $_surname, $_email, $_birth_day)
+    function __construct($_name, $_surname, $_email, $_birth_day, $_creditCard = [])
     {
-        parent::__construct($_name, $_surname, $_email, $_birth_day);
+        parent::__construct($_name, $_surname, $_email, $_birth_day, $_creditCard);
     }
 
     function setSconto()
